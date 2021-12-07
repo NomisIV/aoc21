@@ -9,7 +9,7 @@
     pkgs = nixpkgs.legacyPackages.x86_64-linux;
   in {
     devShell.x86_64-linux = pkgs.mkShell {
-      buildInputs = with pkgs; [ rustc cargo ];
+      buildInputs = with pkgs; [ rustc cargo rustfmt ];
     };
   };
 }
